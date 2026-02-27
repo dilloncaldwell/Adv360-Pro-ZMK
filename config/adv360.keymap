@@ -21,7 +21,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        mt: mt {
+        modtap: mt {
             compatible = "zmk,behavior-hold-tap";
             label = "modtap";
             bindings = <&kp>, <&kp>;
@@ -198,11 +198,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&screenshot  &kp N1                     &kp N2                &kp N3              &kp N4            &kp N5                          &tog 1                                                                                  &mo 3        &kp N6                           &kp N7             &kp N8               &kp N9                 &kp N0                              &record_screen
-&kp TAB      &kp Q                      &kp W                 &kp E               &kp R             &kp T                           &none                                                                                   &none        &kp Y                            &kp U              &kp I                &kp O                  &kp P                               &kp BSLH
-&kp ESC      &hrm_pinky LEFT_CONTROL A  &hrm_ring LEFT_ALT S  &mt LEFT_COMMAND D  &lt 6 F           &kp G                           &none            &mt LCTRL LS(TAB)  &kp LALT      &mt LGUI RA(RG(V))  &mt RCTRL TAB     &none        &kp H                            &kp J              &mt RIGHT_COMMAND K  &hrm_ring RIGHT_ALT L  &hrm_pinky RIGHT_CONTROL SEMICOLON  &kp SQT
-&kp LSHFT    &kp Z                      &kp X                 &kp C               &mt LEFT_SHIFT V  &mt LS(LA(LC(LEFT_COMMAND))) B                                      &kp HOME      &kp PG_UP                                          &mt RS(RA(RC(RIGHT_COMMAND))) N  &mt RIGHT_SHIFT M  &kp COMMA            &kp DOT                &kp FSLH                            &kp RSHFT
-&mo 2        &kp GRAVE                  &kp LC(UP)            &kp LC(LEFT)        &kp LC(RIGHT)                                     &lt 4 BACKSPACE  &lt 7 ESC          &kp END       &kp RG(BACKSLASH)   &mt RSHIFT ENTER  &lt 5 SPACE                                   &kp LEFT           &kp DOWN             &kp UP_ARROW           &kp RIGHT                           &mo 2
+&screenshot  &kp N1                     &kp N2                &kp N3                  &kp N4                &kp N5                              &tog 1                                                                                              &mo 3        &kp N6                               &kp N7                 &kp N8                   &kp N9                 &kp N0                              &record_screen
+&kp TAB      &kp Q                      &kp W                 &kp E                   &kp R                 &kp T                               &none                                                                                               &none        &kp Y                                &kp U                  &kp I                    &kp O                  &kp P                               &kp BSLH
+&kp ESC      &hrm_pinky LEFT_CONTROL A  &hrm_ring LEFT_ALT S  &modtap LEFT_COMMAND D  &lt 6 F               &kp G                               &none            &modtap LCTRL LS(TAB)  &kp LALT      &modtap LGUI RA(RG(V))  &modtap RCTRL TAB     &none        &kp H                                &kp J                  &modtap RIGHT_COMMAND K  &hrm_ring RIGHT_ALT L  &hrm_pinky RIGHT_CONTROL SEMICOLON  &kp SQT
+&kp LSHFT    &kp Z                      &kp X                 &kp C                   &modtap LEFT_SHIFT V  &modtap LS(LA(LC(LEFT_COMMAND))) B                                          &kp HOME      &kp PG_UP                                                  &modtap RS(RA(RC(RIGHT_COMMAND))) N  &modtap RIGHT_SHIFT M  &kp COMMA                &kp DOT                &kp FSLH                            &kp RSHFT
+&mo 2        &kp GRAVE                  &kp LC(UP)            &kp LC(LEFT)            &kp LC(RIGHT)                                             &lt 4 BACKSPACE  &lt 7 ESC              &kp END       &kp RG(BACKSLASH)       &modtap RSHIFT ENTER  &lt 5 SPACE                                       &kp LEFT               &kp DOWN                 &kp UP_ARROW           &kp RIGHT                           &mo 2
             >;
         };
 
